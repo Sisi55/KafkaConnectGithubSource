@@ -14,30 +14,30 @@ import java.util.Map;
 
 public class GitHubSourceConnectorConfig extends AbstractConfig {
 
-    private static final String TOPIC_CONFIG = "topic";
-    private static final String TOPIC_DOC = "Topic to write to";
+    public static final String TOPIC_CONFIG = "topic";
+    public static final String TOPIC_DOC = "Topic to write to";
 
-    private static final String OWNER_CONFIG = "github.owner";
-    private static final String OWNER_DOC = "Owner of the repository you'd like to follow";
+    public static final String OWNER_CONFIG = "github.owner";
+    public static final String OWNER_DOC = "Owner of the repository you'd like to follow";
 
-    private static final String REPO_CONFIG = "github.repo";
-    private static final String REPO_DOC = "Repository you'd like to floow";
+    public static final String REPO_CONFIG = "github.repo";
+    public static final String REPO_DOC = "Repository you'd like to floow";
 
-    private static final String SINCE_CONFIG = "since.timestamp";
-    private static final String SINCE_DOC =
+    public static final String SINCE_CONFIG = "since.timestamp";
+    public static final String SINCE_DOC =
             "Only issues updated at or after this time are returned.\n"
                     + "This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ.\n"
                     + "Defaults to a year from first launch.";
 
-    private static final String BATCH_SIZE_CONFIG = "batch.size";
-    private static final String BATCH_SIZE_DOC = "Number of data points to retrieve at a time "+
+    public static final String BATCH_SIZE_CONFIG = "batch.size";
+    public static final String BATCH_SIZE_DOC = "Number of data points to retrieve at a time "+
             "Default to 100 (max value)";
 
-    private static final String AUTH_USERNAME_CONFIG = "auth.username";
-    private static final String AUTH_USERNAME_DOC = "Optional username to authenticati calls";
+    public static final String AUTH_USERNAME_CONFIG = "auth.username";
+    public static final String AUTH_USERNAME_DOC = "Optional username to authenticati calls";
 
-    private static final String AUTH_PASSWORD_CONFIG = "auth.password";
-    private static final String AUTH_PASSWORD_DOC = "Optional Password to authenticate calls";
+    public static final String AUTH_PASSWORD_CONFIG = "auth.password";
+    public static final String AUTH_PASSWORD_DOC = "Optional Password to authenticate calls";
 
     public GitHubSourceConnectorConfig(ConfigDef config,
                                        Map<String, String> parsedConfig) {
