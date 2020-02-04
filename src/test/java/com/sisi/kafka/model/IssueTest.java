@@ -1,6 +1,7 @@
 package com.sisi.kafka.model;
 
 import com.sisi.kafka.GitHubSchemas;
+import com.sisi.kafka.GitHubSourceTask;
 import org.apache.kafka.connect.data.Struct;
 import org.json.JSONObject;
 import org.junit.Test;
